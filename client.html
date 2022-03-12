@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="client.css">
+</head>
+<body>
+<div id="content">
+    <form name="orderForm" method="post" action="script.php" id="orderForm">
+        <label>Input "FIO"</label><br>
+        <input type="text" name="name" placeholder="Exm: Petrenko Petr Petrovich"><br>
+        <label>Input phone number</label><br>
+        <input type="text" name="phone" placeholder="380000000000"><br>
+        <label>Country</label><br>
+        <select name="selCt" id="selCt">
+            <option value="0">Choose country</option>
+        </select><br>
+        <label>City</label><br>
+        <select name="selCi" id="selCi">
+            <option value="0">Choose city</option>
+        </select><br>
+        <label>Hotel</label><br>
+        <select name="selH" id="selH">
+            <option value="0">Choose hotel</option>
+        </select><br>
+        <input type="button" name="subm" id="subm" value="Order"><br>
+    </form>
+</div>
+<form method="get" action="mainAdmin.html" name="adm">
+    <input type="hidden" value="admin" name="admin">
+    <input type="submit" id="toAdm" value="Admin">
+</form>
+<script src="jquery.js"></script>
+<script src="162124084340855.js"></script>
+<script src="client.js"></script>
+</body>
+</html>

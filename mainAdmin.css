@@ -1,0 +1,49 @@
+body{
+    background: url("images/bcg.jpg") no-repeat;
+    background-size: 100%;
+    color: white;
+}
+.cont{
+    border-bottom:  2px solid lightseagreen;
+    border-left: 2px solid lightseagreen;
+    padding: 5px;
+}
+#addCountry, #addCity, #addHotel{
+    width: 250px;
+    position: relative;
+    float: left;
+    margin-right: 45px;
+
+}
+#addCity{
+
+}
+form input{
+    margin-bottom: 10px;
+}
+form{
+    margin-bottom: 15px;
+}
+.formBtn{
+    background-color: deepskyblue;
+    color: dimgray;
+    border-radius: 25%;
+    border: none;
+    height: 22px;
+}
+#content{
+    padding-left: 20px;
+}
+.sel{
+    margin-bottom: 10px;
+    width: 120px;
+}
+#mainH{
+    text-align: center;
+}
+#statTb{
+
+}
+#mStatTb{
+    display: none;
+}

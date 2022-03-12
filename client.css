@@ -1,0 +1,16 @@
+#content{
+    width: 300px;
+    border:  2px solid steelblue;
+    left:100px;
+    top: 100px;
+    position: absolute;
+}
+body
+{
+    background-color: lavender;
+    font-family: "Comic Sans MS";
+
+}
+select,input{
+    margin-bottom: 15px;
+}

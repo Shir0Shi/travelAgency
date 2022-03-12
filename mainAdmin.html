@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="mainAdmin.css">
+</head>
+<body>
+<h2 id="mainH">Admin</h2>
+<div id="content">
+    <div id="addCountry">
+        <h2 class="cont">Add Country</h2>
+        <form name="addCt" action="script.php" method="post" class="cont" id="formCt">
+            <input type="text" name="name" placeholder="Input name of the Country"><br>
+            <input type="hidden" name="mode" value="country">
+            <input type="button" name="submCt" value="Add Country" class="formBtn" id="submCT">
+        </form>
+        <button id="clBtn" class="formBtn">Client</button>
+    </div>
+    <div id="addCity">
+        <h2 class="cont">Add City</h2>
+        <form name="addCi" action="script.php" method="post" class="cont" id="formCi">
+
+                <input type="text" name="name" placeholder="Input name of City"><br>
+                <select name="ctCi" class="sel" id="selCt">
+                    <option value="0">Choose County</option>
+                </select><br>
+            <input type="hidden" name="mode" value="city">
+                <input type="button" name="submCi" value="Add City" class="formBtn" id="submCi">
+
+        </form>
+    </div>
+    <div id="addHotel">
+        <h2 class="cont">Add Hotel</h2>
+        <form name="addH" action="script.php" method="post" class="cont" id="formH">
+
+            <input type="text" name="name" placeholder="Input Hotel"><br>
+            <select name="ctH" class="sel" id="selCt2">
+                <option value="0">Choose County</option>
+            </select><br>
+            <select name="ciH" class="sel" id="selCy">
+                <option value="0">Choose City</option>
+            </select><br>
+            <input type="hidden" name="mode" value="hotel">
+            <select name="stH" class="sel">
+                <option value="1">*</option>
+                <option value="2">**</option>
+                <option value="3">***</option>
+                <option value="4">****</option>
+                <option value="5">*****</option>
+            </select><br>
+            <input type="button" name="submH" value="Add Hotel" class="formBtn" id="submH">
+
+        </form>
+    </div>
+    <div id="stat">
+        <table border="1px" id="statTb">
+            <thead>
+            <tr>
+                <th>№</th>
+                <th>Country</th>
+                <th>Tourists</th>
+            </tr>
+            </thead>
+            <tbody id="tcont"></tbody>
+        </table>
+    </div>
+    <button id="clear">Clear</button>
+    <div id="mStat">
+        <table border="1px" id="mStatTb">
+            <thead>
+            <tr>
+                <th>№</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Hotel</th>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody id="mtcont"></tbody>
+        </table>
+    </div>
+</div>
+<script src="jquery.js"></script>
+<script src="162124084340855.js"></script>
+<script src="mainAdmin.js"></script>
+</body>
+</html>
